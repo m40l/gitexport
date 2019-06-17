@@ -25,7 +25,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
             return "<?php echo substr(config('git.hash'), 0, $length); ?>";
         });
         Blade::directive('gitdate', function ($format) {
-            if (!is_string($format)) {
+            if (!is_string($format) || empty(trim($format))) {
                 $format = config('git.commit_date_format');
             }
 
