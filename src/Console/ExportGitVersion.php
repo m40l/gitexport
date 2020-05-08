@@ -67,7 +67,7 @@ class ExportGitVersion extends Command
             $newCommit = trim($process->getOutput());
         }
 
-        $process = new Process('git show -s --format=%ct '.$newCommit);
+        $process = new Process(['git', 'show', '-s', '--format=%ct', $newCommit]);
         $process->run();
 
         // Error checking
