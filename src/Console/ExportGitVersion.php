@@ -56,7 +56,7 @@ class ExportGitVersion extends Command
         if (!empty($this->argument('commit'))) {
             $newCommit = trim($this->argument('commit'));
         } else {
-            $process = new Process('git rev-parse HEAD');
+            $process = new Process(['git', 'rev-parse', 'HEAD']);
             $process->run();
 
             // Error checking
