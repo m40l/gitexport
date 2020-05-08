@@ -1,13 +1,18 @@
 {
     "name": "msleonar/gitexport",
     "description": "Keeping track of git versions in laravel projects",
-    "keywords": ["laravel", "git"],
+    "keywords": [
+        "laravel",
+        "git"
+    ],
     "license": "MIT",
     "version": "0.2",
-    "authors": [{
-        "name": "Matthew Leonard",
-        "email": "msleonar@ncsu.edu"
-    }],
+    "authors": [
+        {
+            "name": "Matthew Leonard",
+            "email": "msleonar@ncsu.edu"
+        }
+    ],
     "require": {
         "php": ">=7.0"
     },
@@ -26,6 +31,6 @@
         }
     },
     "require-dev": {
-        "illuminate/support": "5.6.x"
+        "illuminate/support": "^7.0"
     }
 }
