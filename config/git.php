@@ -14,7 +14,7 @@ return [
     /*
      * Tells the @githash directive the default length to truncate the git hash to
      */
-    'hash_length' => 6,
+    'hash_length' => 7,
 
     /*
      * Tells the @gitdate directive the default format to display the git commit date as
